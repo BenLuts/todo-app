@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    
+    <IsAspireHost>true</IsAspireHost>
+    <UserSecretsId>651d8a9f-f3b3-4519-8aad-31c20ae62cf4</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Aspire.Hosting.AppHost" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Todo.API\Todo.API.csproj" />
+  </ItemGroup>
+
+</Project>

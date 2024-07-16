@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="MediatR" />
+        <PackageReference Include="Microsoft.Azure.Cosmos" />
+        <PackageReference Include="Newtonsoft.Json" />
+    </ItemGroup>
+    <ItemGroup>
+        <Using Include="System.Net" />
+        <Using Include="Microsoft.Extensions.Logging" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Features\SingleTodoItem\Infrastructure\" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <FrameworkReference Include="Microsoft.AspNetCore.App" />
+    </ItemGroup>
+</Project>
+

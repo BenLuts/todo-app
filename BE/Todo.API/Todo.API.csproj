@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>    
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Todo.Application\Todo.Application.csproj" />
+    <ProjectReference Include="..\Todo.ServiceDefaults\Todo.ServiceDefaults.csproj" />
+  </ItemGroup>
+
+    <ItemGroup>
+        <Using Include="Todo.Application.Common" />
+        <Using Include="Todo.Application.Common.Response" />
+    </ItemGroup>
+    
+</Project>
